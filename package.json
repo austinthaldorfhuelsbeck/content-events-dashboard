@@ -1,0 +1,18 @@
+{
+  "name": "content-events-dashboard",
+  "version": "1.0.0",
+  "description": "Manage posts and events",
+  "main": ".",
+  "scripts": {
+    "install": "cd client && npm install && cd ../server && npm install",
+    "server": "cd ./server && nodemon .",
+    "client": "cd client && npm start && cd ..",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "author": "Austin Thaldorf-Huelsbeck",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3"
+  }
+}
